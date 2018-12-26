@@ -3,6 +3,9 @@
 A CLI for [recidiffist][recidiffist]. If you're not sure what this is you
 probably want to look at that repo instead.
 
+
+[recidiffist]: https://github.com/latacora/recidiffist
+
 ## Installation
 
 recidiffist comes as a single binary. Put it on your `$PATH`.
