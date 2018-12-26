@@ -11,7 +11,6 @@
   (if (= s "-") *in* (io/reader s)))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
   (doseq [diff (->> *in* json/parsed-seq (eduction rs/pairwise-diffing))]
     (json/generate-stream diff *out*)))
