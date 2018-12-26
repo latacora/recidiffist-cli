@@ -1,4 +1,4 @@
-(defproject recidiffist-cli "0.1.0-SNAPSHOT"
+(defproject recidiffist-cli "0.1.0"
   :description "Diffs for structured data, from the CLI"
   :url "https://github.com/latacora/recidiffist"
   :license {:name "Eclipse Public License"
