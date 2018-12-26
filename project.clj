@@ -12,5 +12,4 @@
   :native-image {:name "recidiffist"
                  :opts ["--verbose"]}
   :profiles {:uberjar {:aot :all
-                       :native-image {:opts [#_"--report-unsupported-elements-at-runtime"
-                                             "-Dclojure.compiler.direct-linking=true"]}}})
+                       :native-image {:opts ["-Dclojure.compiler.direct-linking=true"]}}})
