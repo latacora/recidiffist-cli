@@ -6,9 +6,6 @@
             [manifold.stream :as ms])
   (:gen-class))
 
-(defn ^:private to-reader
-  [s]
-  (if (= s "-") *in* (io/reader s)))
 
 (defn -main
   [& args]
