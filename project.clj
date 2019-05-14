@@ -12,6 +12,11 @@
   :native-image {:name "recidiffist"
                  :opts ["--verbose"]}
   :profiles {:uberjar {:aot :all
-                       :native-image {:opts ["-Dclojure.compiler.direct-linking=true"]}}}
+                       :native-image {:opts ["--verbose"
+                                             "--no-fallback"
+                                             "-Dclojure.compiler.direct-linking=true"
+                                             "-H:+ReportExceptionStackTraces"
+                                             "--report-unsupported-elements-at-runtime"
+                                             "--initialize-at-build-time"]}}}
   :deploy-repositories [["releases" :clojars]
                         ["snapshots" :clojars]])
