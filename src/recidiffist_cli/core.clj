@@ -1,9 +1,7 @@
 (ns recidiffist-cli.core
   (:require [clojure.tools.cli :as cli]
-            [clojure.java.io :as io]
             [cheshire.core :as json]
             [recidiffist.stream :as rs]
-            [manifold.stream :as ms]
             [clojure.data :as cd])
   (:gen-class))
 
